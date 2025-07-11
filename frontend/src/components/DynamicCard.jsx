@@ -2,16 +2,11 @@
 
 import React, { useRef } from "react";
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode;
-  style?: React.CSSProperties;
-}
-
-export default function DynamicCard({ children, style, ...rest }: Props) {
-  const ref = useRef<HTMLDivElement>(null);
+export default function DynamicCard({ children, style, ...rest }) {
+  const ref = useRef(null);
 
   // 3D hover effect
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e) => {
     const node = ref.current;
     if (!node) return;
     const rect = node.getBoundingClientRect();

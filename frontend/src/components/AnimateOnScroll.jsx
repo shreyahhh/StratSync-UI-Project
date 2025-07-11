@@ -2,14 +2,8 @@
 
 import React, { useRef, useEffect } from "react";
 
-interface Props {
-  children: React.ReactNode;
-  delay?: number;
-  className?: string;
-}
-
-export default function AnimateOnScroll({ children, delay = 0, className }: Props) {
-  const ref = useRef<HTMLDivElement>(null);
+export default function AnimateOnScroll({ children, delay = 0, className }) {
+  const ref = useRef(null);
 
   useEffect(() => {
     const node = ref.current;
@@ -36,8 +30,8 @@ export default function AnimateOnScroll({ children, delay = 0, className }: Prop
         transition: `opacity 0.7s ${delay}ms cubic-bezier(.25,.8,.25,1), transform 0.7s ${delay}ms cubic-bezier(.25,.8,.25,1)`,
       }}
       onAnimationEnd={e => {
-        (e.currentTarget as HTMLDivElement).style.opacity = "1";
-        (e.currentTarget as HTMLDivElement).style.transform = "none";
+        e.currentTarget.style.opacity = "1";
+        e.currentTarget.style.transform = "none";
       }}
     >
       {children}

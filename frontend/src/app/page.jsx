@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Navbar from "../components/Navbar";
 import DynamicCard from "../components/DynamicCard";
 import AnimateOnScroll from "../components/AnimateOnScroll";
@@ -7,10 +6,9 @@ import { FaSlack, FaHubspot, FaMicrosoft, FaPhone, FaLinkedin } from "react-icon
 import { SiZendesk, SiXero, SiZoho, SiSalesforce } from "react-icons/si";
 import { MdBusinessCenter } from "react-icons/md";
 
-// Define the main theme colors based on the logo (teal/green)
-const mainGreen = "#00c896"; // main accent
-const lightGreen = "#b2ffe7"; // light accent
-const darkGreen = "#008c6e"; // dark accent
+const mainGreen = "#00c896";
+const lightGreen = "#b2ffe7";
+const darkGreen = "#008c6e";
 const gradient = `linear-gradient(90deg, ${mainGreen} 0%, #5fffa1 100%)`;
 
 const useCases = [
@@ -58,9 +56,9 @@ const integrations = [
   { name: "HubSpot", icon: <FaHubspot size={48} color="#FF7A59" /> },
   { name: "Zendesk", icon: <SiZendesk size={48} color="#03363D" /> },
   { name: "Xero", icon: <SiXero size={48} color="#13B5EA" /> },
-  { name: "NetSuite", icon: <MdBusinessCenter size={48} color="#1A1918" /> }, // Placeholder
+  { name: "NetSuite", icon: <MdBusinessCenter size={48} color="#1A1918" /> },
   { name: "Zoho", icon: <SiZoho size={48} color="#C8202F" /> },
-  { name: "Microsoft Teams", icon: <FaMicrosoft size={48} color="#6264A7" /> }, // Fallback
+  { name: "Microsoft Teams", icon: <FaMicrosoft size={48} color="#6264A7" /> },
 ];
 
 export default function Home() {
@@ -543,7 +541,6 @@ export default function Home() {
         </AnimateOnScroll>
       </section>
 
-
       {/* Footer */}
       <footer id="footer" style={{ minHeight: 200, background: '#14213d', color: '#fff', marginTop: 0, padding: '48px 0 24px 0' }}>
         <AnimateOnScroll>
@@ -615,4 +612,4 @@ export default function Home() {
       `}</style>
     </div>
   );
-}
+} 
