@@ -4,13 +4,24 @@
 
 Stract is a modern, visually dynamic landing page built as a frontend-only project. It features a bold hero section, animated backgrounds, a sticky navbar, interactive UI elements, and a beautiful, responsive design. The project is designed for rapid customization and high-impact first impressions.
 
+---
+
+## 🌐 Live Demo
+
+You can view the latest deployed version of this project here:
+
+👉 [Stract Live (Dev Tunnel)](https://q62j6qwv-3000.inc1.devtunnels.ms/)
+
+---
+
 ## Tech Stack
 
-- **Next.js** (App Router)
-- **React**
+- **Next.js** (v15+, App Router, Turbopack)
+- **React** (v19)
 - **TypeScript**
-- **CSS Modules & Inline Styles**
+- **CSS Modules** & Inline Styles
 - **react-icons**
+- **ESLint** (for code quality)
 
 ## Features
 
@@ -39,7 +50,9 @@ Stract is a modern, visually dynamic landing page built as a frontend-only proje
    yarn dev
    ```
 3. **Open your browser:**
-   Visit [http://localhost:3000](http://localhost:3000) to view the landing page.
+   Visit [http://localhost:3000](http://localhost:3000) to view the landing page locally.
+
+   Or use the public Dev Tunnel link above to share your work with others.
 
 ## Folder Structure
 
