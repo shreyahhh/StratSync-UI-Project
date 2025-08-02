@@ -4,13 +4,6 @@
 
 Stract is a modern, visually dynamic landing page built as a frontend-only project. It features a bold hero section, animated backgrounds, a sticky navbar, interactive UI elements, and a beautiful, responsive design. The project is designed for rapid customization and high-impact first impressions.
 
----
-
-## 🌐 Live Demo
-
-You can view the latest deployed version of this project here:
-
-👉 [Stract Live (Dev Tunnel)](https://q62j6qwv-3000.inc1.devtunnels.ms/)
 
 ---
 
